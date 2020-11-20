@@ -91,9 +91,7 @@ function placeInTable(y, x) {
   // creates div and defines as piece
   const piece = document.createElement('div');
   // adds class name of 'piece' to div
-  piece.classList.add('piece');
-  // adds class name of the currPlayer to div
-  piece.classList.add(`p${currPlayer}`);
+  piece.classList.add('piece', `p${currPlayer}`);
   // selects spot of td element with id "x-y" and defines as spot
   const spot = document.getElementById(`${y}-${x}`);
   // append piece div to spot of td of "x-y" selection
